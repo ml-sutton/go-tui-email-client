@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/ml-sutton/go-tui-email-client/lifecycle"
+	"github.com/ml-sutton/go-tui-email-client/internal/lifecycle"
 )
 
 func main() {

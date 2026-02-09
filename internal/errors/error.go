@@ -12,13 +12,13 @@ type Error struct {
 	lineNumber   int
 }
 
-func NewError[T Error](base error, service error) *T {
+func NewError(base error, service error) *Error {
 	_, file, line, ok := runtime.Caller(1)
 	if !ok {
 		file = "error.go"
 		line = 15
 	}
-	return &T{
+	return &Error{
 		baseError:    base,
 		serviceError: service,
 		fileLocation: file,
