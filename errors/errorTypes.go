@@ -7,3 +7,4 @@ type SMTPError Error
 type AuthError Error
 type ClientError Error
 type ParsingError Error
+type SyncError Error

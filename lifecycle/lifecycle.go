@@ -2,6 +2,7 @@ package lifecycle
 
 import (
 	"context"
+	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
@@ -18,7 +19,7 @@ func RunClient() error {
 		return nil
 	case err, ok := <-channels.fatal:
 		if !ok {
-
+			return fmt.Errorf("hello")
 		}
 		return err
 	}
