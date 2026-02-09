@@ -14,6 +14,7 @@ func RunClient() error {
 	var channels *Channels = CreateChannels()
 	defer cancel()
 	defer channels.Close()
+
 	select {
 	case <-ctx.Done():
 		return nil
