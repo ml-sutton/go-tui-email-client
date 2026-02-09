@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/ml-sutton/go-tui-email-client/lifecycle"
+)
 
 func main() {
-	fmt.Println("Hello world")
+	lifecycle.RunClient()
 }
